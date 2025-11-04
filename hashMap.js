@@ -118,7 +118,7 @@ export class hashMap {
     this.buckets = new Array(this.capacity).fill(null).map(() => []);
 
     for (let bucket of oldBUckets) {
-      for (let [key, value] of buckets) {
+      for (let [key, value] of bucket) {
         this.set(key, value);
       }
     }
